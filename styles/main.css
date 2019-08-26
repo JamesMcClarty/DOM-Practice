@@ -1,6 +1,6 @@
 .article {
     padding: 10px;
-    border: 1px solid blue;
+    border: 1px solid gray;
 }
 
 .article__header {
@@ -17,4 +17,42 @@
 
 .dashed {
     border: 1px dashed black;
+}
+
+.header_color{
+    border: none;
+    background-color: lightgrey;
+    color:white;
+    padding: 10px;
+}
+
+.important{
+    text-align: center;
+    height: 10%;
+}
+
+.date_posted_container{
+    border: solid 2px blue;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    max-width: 100%;
+    height: 10%;
+}
+
+.month_date, .year_date{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 2px 50px;
+}
+
+.day_date{
+    font-weight: bolder;
+    font-size: 48px;
+    margin: 2px 50px;
+}
+
+.article_header_container{
+    display: flex;
+    flex-direction: row;
 }
