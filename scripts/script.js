@@ -12,7 +12,7 @@ const articleHeaderArray = document.querySelectorAll(".article__header");
 
 for(let i = 0; i < articleHeaderArray.length; i++){
     articleHeaderArray[i].classList.remove("article__header");
-    articleHeaderArray[i].classList.add("article_header", "important");
+    articleHeaderArray[i].classList.add("article__header", "important");
 }
 
 /*3. Obtain a reference the element with a class of dashed and remove it.*/
@@ -25,3 +25,27 @@ with a class of article_footer and add the class of goldenrod it.*/
 
 articleFooter.classList.add("goldenrod");
 
+const headerContent = document.getElementsByTagName("HEADER");
+
+console.log(headerContent);
+
+for(let i = 0; i < headerContent.length; i++){
+    headerContent[0].classList.add("header_color")
+}
+
+var day, month, year;
+day = 24;
+month = 04;
+year = 2005;
+
+function SetDate(_day, _month, _year){
+    const webPageDay = document.querySelector(".day_date");
+    const webPageMonth = document.querySelector(".month_date");
+    const webPageYear = document.querySelector(".year_date");
+    
+    webPageDay.textContent = _day;
+    webPageMonth.textContent = _month;
+    webPageYear.textContent = _year;
+}
+
+SetDate(day,month,year);
